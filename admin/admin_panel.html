@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel - College Finder</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>⚙️ Admin Panel</h1>
+
+    <!-- ADD COLLEGE FORM -->
+    <h2>Add New College</h2>
+
+    <input type="text" id="name" placeholder="College Name"><br><br>
+
+    <select id="branch">
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="IT">IT</option>
+    </select><br><br>
+
+    <input type="number" id="cutoff_rank" placeholder="Cutoff Rank"><br><br>
+
+    <input type="number" id="fees" placeholder="Fees"><br><br>
+
+    <input type="text" id="location" placeholder="Location"><br><br>
+
+    <input type="number" id="placement" placeholder="Placement %"><br><br>
+
+    <button onclick="addCollege()">Add College</button>
+
+    <hr>
+
+    <!-- COLLEGE LIST -->
+    <h2>All Colleges</h2>
+
+    <div id="collegeList"></div>
+
+</div>
+
+<script>
+function addCollege() {
+    let data = {
+        name: document.getElementById("name").value,
+        branch: document.getElementById("branch").value,
+        cutoff_rank: document.getElementById("cutoff_rank").value,
+        fees: document.getElementById("fees").value,
+        location: document.getElementById("location").value,
+        placement: document.getElementById("placement").value
+    };
+
+    fetch("/add_college", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    .then(res => res.json())
+    .then(res => {
+        alert(res.message);
+        loadColleges();
+    });
+}
+
+function loadColleges() {
+    fetch("/get_colleges")
+    .then(res => res.json())
+    .then(data => {
+        let div = document.getElementById("collegeList");
+        div.innerHTML = "";
+
+        data.forEach(c => {
+            div.innerHTML += `
+                <div class="card">
+                    <h3>${c.name}</h3>
+                    <p>${c.branch}</p>
+                    <p>${c.cutoff_rank}</p>
+                    <p>${c.location}</p>
+                </div>
+            `;
+        });
+    });
+}
+
+loadColleges();
+</script>
+
+</body>
+</html>

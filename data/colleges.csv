@@ -1,0 +1,62 @@
+name,branch,cutoff_rank,fees,location,placement
+
+VR Siddhartha Engineering College,CSE,15000,70000,Vijayawada,85
+VR Siddhartha Engineering College,ECE,25000,70000,Vijayawada,80
+VR Siddhartha Engineering College,EEE,30000,70000,Vijayawada,78
+RVR & JC College of Engineering,CSE,20000,65000,Guntur,82
+RVR & JC College of Engineering,ECE,30000,65000,Guntur,78
+RVR & JC College of Engineering,IT,35000,65000,Guntur,80
+Vignan University,CSE,30000,120000,Guntur,88
+Vignan University,ECE,40000,120000,Guntur,85
+Vignan University,EEE,45000,120000,Guntur,75
+SRM University,CSE,50000,200000,Chennai,90
+SRM University,ECE,60000,200000,Chennai,85
+SRM University,IT,65000,200000,Chennai,87
+LPU Punjab,CSE,70000,180000,Punjab,88
+LPU Punjab,ECE,75000,180000,Punjab,85
+LPU Punjab,IT,80000,180000,Punjab,80
+
+Amrita University,CSE,10000,300000,Coimbatore,95
+Amrita University,ECE,15000,300000,Coimbatore,92
+Amrita University,EEE,20000,300000,Coimbatore,90
+
+BITS Pilani,CSE,5000,400000,Rajasthan,98
+BITS Pilani,ECE,8000,400000,Rajasthan,97
+BITS Pilani,EEE,10000,400000,Rajasthan,96
+
+NIT Warangal,CSE,3000,200000,Warangal,98
+NIT Warangal,ECE,5000,200000,Warangal,97
+NIT Warangal,EEE,8000,200000,Warangal,96
+
+IIIT Hyderabad,CSE,2000,250000,Hyderabad,99
+IIIT Hyderabad,ECE,3000,250000,Hyderabad,98
+
+JNTU Hyderabad,CSE,20000,60000,Hyderabad,85
+JNTU Hyderabad,ECE,25000,60000,Hyderabad,82
+JNTU Hyderabad,EEE,30000,60000,Hyderabad,80
+
+CBIT Hyderabad,CSE,18000,90000,Hyderabad,88
+CBIT Hyderabad,ECE,22000,90000,Hyderabad,86
+CBIT Hyderabad,IT,25000,90000,Hyderabad,87
+
+Vasavi College of Engineering,CSE,17000,85000,Hyderabad,89
+Vasavi College of Engineering,ECE,20000,85000,Hyderabad,86
+
+OU College of Engineering,CSE,25000,50000,Hyderabad,84
+OU College of Engineering,ECE,30000,50000,Hyderabad,82
+
+GMR Institute of Technology,CSE,22000,75000,Rajam,83
+GMR Institute of Technology,ECE,26000,75000,Rajam,80
+
+Gudlavalleru Engineering College,CSE,28000,65000,Gudlavalleru,82
+Gudlavalleru Engineering College,ECE,32000,65000,Gudlavalleru,78
+
+Gayatri Vidya Parishad,CSE,26000,70000,Visakhapatnam,84
+Gayatri Vidya Parishad,ECE,30000,70000,Visakhapatnam,81
+
+Andhra University,CSE,24000,50000,Visakhapatnam,86
+Andhra University,ECE,28000,50000,Visakhapatnam,83
+
+KL University,CSE,35000,150000,Vijayawada,89
+KL University,ECE,40000,150000,Vijayawada,86
+KL University,IT,42000,150000,Vijayawada,88

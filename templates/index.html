@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Finder Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎓 College Finder Chatbot</h1>
+
+    <!-- FILTER SECTION -->
+    <h2>Find Colleges</h2>
+
+    <input type="number" id="rank" placeholder="Enter your rank">
+
+    <select id="branch">
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+        <option value="IT">IT</option>
+    </select>
+
+    <button onclick="filterColleges()">Search Colleges</button>
+
+    <div id="results"></div>
+
+    <hr>
+
+    <!-- CHATBOT SECTION -->
+    <h2>AI Chatbot</h2>
+
+    <div id="chatBox"></div>
+
+    <input type="text" id="chatInput" placeholder="Ask something...">
+
+    <button onclick="sendMessage()">Send</button>
+
+    <button onclick="startVoice()">🎤 Speak</button>
+
+</div>
+
+<script src="/static/script.js"></script>
+<script src="/static/chatbot_ui.js"></script>
+<script src="/static/voice.js"></script>
+
+</body>
+</html>
